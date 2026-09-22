@@ -1,0 +1,13 @@
+[package]
+name = "fuzzyx"
+version = "1.0.0"
+edition = "2021"
+description = "Fuzzy string matching: Levenshtein with early exit, Jaro-Winkler, n-gram similarity, ranked search, C-ABI Python binding"
+license = "MIT"
+
+[lib]
+name = "fuzzyx"
+crate-type = ["rlib", "cdylib"]
+
+[profile.release]
+opt-level = 3

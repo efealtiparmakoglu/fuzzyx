@@ -18,11 +18,9 @@ fn main() {
     match argv.first().map(|s| s.as_str()) {
         Some("-h" | "--help") => {
             println!("{USAGE}");
-            return;
         }
         Some("-V" | "--version") => {
             println!("fuzzyx 1.0.0");
-            return;
         }
         Some("distance") => {
             let (a, b) = match (argv.get(1), argv.get(2)) {
